@@ -26,7 +26,7 @@ with(powerData, {
     points(dmy_hms(paste(Date,Time)),Sub_metering_2,type="l",col="red", ylab="", xlab="")
     points(dmy_hms(paste(Date,Time)),Sub_metering_3,type="l",col="blue", ylab="", xlab="")
     title(ylab="Energy sub metering")
-    legend("topright",lty=1,col=c("black","blue","red"),legend=c("Sub metering 1","Sub metering 2","Sub metering 3"))}
+    legend("topright",lty=1,bty="n",col=c("black","red","blue"),legend=c("Sub metering 1","Sub metering 2","Sub metering 3"))}
     
     #Plot a time series showing Global Reactive Power utilization across the two day period
     plot(dmy_hms(paste(Date,Time)),Global_Reactive_Power, type="l",xlab="datetime",ylab="Global Reactive Power")
